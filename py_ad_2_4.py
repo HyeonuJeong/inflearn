@@ -32,7 +32,7 @@ def main():
         
         # 실행
         
-        for future in as_completed(future_to_url): # timeout=1(테스트 추천)
+        for future in as_completed(future_to_url,timeout=3): # timeout=1(테스트 추천)
             # Key값이 Future 객체
             url = future_to_url[future]
             
